@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-header">
+          Search Bus
+        </div>
+        <div class="card-body">
+          <form class="form" [formGroup]="searchFrom">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label fW-bold">
+                Bus Type
+              </label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control"   placeholder="Select Item">
+
+              </div>
+              <label class="col-sm-2 col-form-label fW-bold">
+                From Date
+              </label>
+              <div class="col-sm-4">
+              <input type="date" class="form-control"   >
+ </div>
+            </div>
+            <div class="form-group row justify-content-end">
+              <label class="col-sm-2 col-form-label fW-bold">
+                To Date
+              </label>
+              <div class="col-sm-4">
+              <input type="date" class="form-control" id="exampleInputPassword1" >
+            </div>
+
+          
+       </div>
+       <div class="form-group row justify-content-end">
+        <div class="col-sm-4">
+        <button type="submit" class="btn btn-primary" (click)=onSearch()>Search</button>
+</div>
+        </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+</div>
